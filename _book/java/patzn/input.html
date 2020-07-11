@@ -7,7 +7,7 @@
         <title>导入 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.1">
         
         
         
@@ -687,11 +687,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x5BFC;&#x5165;">&#x5BFC;&#x5165;</h2>
-<h3 id="&#x6A21;&#x7248;&#x4E0B;&#x8F7D;">&#x6A21;&#x7248;&#x4E0B;&#x8F7D;</h3>
-<h5 id="&#x6253;&#x6210;jar&#x5305;&#x7684;&#x9879;&#x76EE;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#x62A5;&#x9519;&#x95EE;&#x9898;"><strong><em>&#x6253;&#x6210;jar&#x5305;&#x7684;&#x9879;&#x76EE;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#x62A5;&#x9519;&#x95EE;&#x9898;</em></strong></h5>
-<p>&#x5F53;&#x9879;&#x76EE;&#x6253;&#x5305;&#x6210;jar&#x5305;&#x540E;&#xFF0C;&#x4E0D;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x8DEF;&#x5F84;&#x518D;&#x53BB;&#x5BFB;&#x627E;&#x6587;&#x4EF6;&#x8981;&#x901A;&#x8FC7;&#x6D41;&#x6765;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;</p>
-<pre><code>String path = linuxOrWinPath(&quot;.xlsx&quot;);     //&#x8DEF;&#x5F84; FileUtils.downloadFileLocal(getClass().getClassLoader().getResourceAsStream(&quot;templates/excel/LeaceCost.xlsx&quot;),path);  //&#x5C06;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x5230;&#x672C;&#x5730;
+                                <h2 id="&#x5BFC;&#x5165;">&#x5BFC;&#x5165;</h2><h3 id="&#x6A21;&#x7248;&#x4E0B;&#x8F7D;">&#x6A21;&#x7248;&#x4E0B;&#x8F7D;</h3><h5 id="&#x6253;&#x6210;jar&#x5305;&#x7684;&#x9879;&#x76EE;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#x62A5;&#x9519;&#x95EE;&#x9898;"><strong><em>&#x6253;&#x6210;jar&#x5305;&#x7684;&#x9879;&#x76EE;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#x62A5;&#x9519;&#x95EE;&#x9898;</em></strong></h5><p>&#x5F53;&#x9879;&#x76EE;&#x6253;&#x5305;&#x6210;jar&#x5305;&#x540E;&#xFF0C;&#x4E0D;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x8DEF;&#x5F84;&#x518D;&#x53BB;&#x5BFB;&#x627E;&#x6587;&#x4EF6;&#x8981;&#x901A;&#x8FC7;&#x6D41;&#x6765;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;</p><pre><code>String path = linuxOrWinPath(&quot;.xlsx&quot;);     //&#x8DEF;&#x5F84; FileUtils.downloadFileLocal(getClass().getClassLoader().getResourceAsStream(&quot;templates/excel/LeaceCost.xlsx&quot;),path);  //&#x5C06;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x5230;&#x672C;&#x5730;
 
 public static void downloadFileLocal(InputStream is, String destPath) throws IOException {
         // &#x4E07;&#x4E00;&#x8DEF;&#x5F84;&#x6CA1;&#x6709;&#x5462;
@@ -730,9 +726,8 @@ public String linuxOrWinPath(String  type){
             pdfdir += File.separator;
         }
         return  pdfdir+fileName;
-    }
-</code></pre><p>1.&#x5355;&#x4E2A;&#x6A21;&#x7248;&#x4E0B;&#x8F7D;</p>
-<pre><code class="lang-java"><span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/download&quot;</span>)
+    }</code></pre>
+<p>1.&#x5355;&#x4E2A;&#x6A21;&#x7248;&#x4E0B;&#x8F7D;</p><pre><code class="lang-java"><span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/download&quot;</span>)
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">downloadFile</span><span class="hljs-params">(HttpServletRequest request,
                              HttpServletResponse response)</span> <span class="hljs-keyword">throws</span> Exception </span>{
         response.setContentType(<span class="hljs-string">&quot;text/html;charset=UTF-8&quot;</span>);
@@ -771,10 +766,8 @@ Microsoft <span class="hljs-title">Excel</span> <span class="hljs-params">(.xls)
 Microsoft <span class="hljs-title">Powerpoint</span> <span class="hljs-params">(.ppt)</span>: application/ms-powerpoint
 <span class="hljs-title">Realaudio</span> <span class="hljs-params">(.rm, .ram)</span>: audio/x-pn-realaudio
 Text <span class="hljs-title">format</span> <span class="hljs-params">(.txt)</span>: text/txt
-Zipped <span class="hljs-title">files</span> <span class="hljs-params">(.zip)</span>: application/zip
-</span></code></pre>
-<p>2.&#x591A;&#x4E2A;&#x6A21;&#x7248;&#x4E0B;&#x8F7D;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;excel&#x63A7;&#x5236;&#x7C7B;</p>
-<pre><code class="lang-java"><span class="hljs-meta">@RestController</span>
+Zipped <span class="hljs-title">files</span> <span class="hljs-params">(.zip)</span>: application/zip</span></code></pre>
+<p>2.&#x591A;&#x4E2A;&#x6A21;&#x7248;&#x4E0B;&#x8F7D;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;excel&#x63A7;&#x5236;&#x7C7B;</p><pre><code class="lang-java"><span class="hljs-meta">@RestController</span>
 <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/excel&quot;</span>)
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExcelController</span> </span>{
 
@@ -958,10 +951,12 @@ Zipped <span class="hljs-title">files</span> <span class="hljs-params">(.zip)</s
         }
         <span class="hljs-keyword">return</span> exception;
     }
+
+
+
+
 </code></pre>
-<h2 id="&#x5BFC;&#x5165;">&#x5BFC;&#x5165;</h2>
-<p>&#x7B2C;&#x4E00;&#x79CD; &#x4EE3;&#x7801;&#x91CF;&#x8F83;&#x5C11;&#xFF0C;&#x5BF9;excel&#x5185;&#x5BB9;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x591A;&#x6821;&#x9A8C; &#x4F9D;&#x8D56;easypoi</p>
-<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">importExcel</span><span class="hljs-params">(MultipartFile file, Account account )</span> </span>{
+<h2 id="&#x5BFC;&#x5165;">&#x5BFC;&#x5165;</h2><p>&#x7B2C;&#x4E00;&#x79CD; &#x4EE3;&#x7801;&#x91CF;&#x8F83;&#x5C11;&#xFF0C;&#x5BF9;excel&#x5185;&#x5BB9;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x591A;&#x6821;&#x9A8C; &#x4F9D;&#x8D56;easypoi</p><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">importExcel</span><span class="hljs-params">(MultipartFile file, Account account )</span> </span>{
         ImportParams importParams = <span class="hljs-keyword">new</span> ImportParams();
         importParams.setTitleRows(<span class="hljs-number">0</span>);
         importParams.setHeadRows(<span class="hljs-number">1</span>);
@@ -1003,8 +998,7 @@ Zipped <span class="hljs-title">files</span> <span class="hljs-params">(.zip)</s
             <span class="hljs-keyword">return</span> saveBatch(typhoonOilPlatforms);
         }
        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
-    }
-</code></pre>
+    }</code></pre>
 
                                 
                                 </section>
@@ -1044,7 +1038,7 @@ Zipped <span class="hljs-title">files</span> <span class="hljs-params">(.zip)</s
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"导入","level":"1.8.2","depth":2,"next":{"title":"导出","level":"1.8.3","depth":2,"ref":"","articles":[]},"previous":{"title":"上传&下载","level":"1.8.1","depth":2,"path":"java/patzn/upload.md","ref":"java/patzn/upload.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/patzn/input.md","mtime":"2020-06-27T15:06:40.849Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-09T10:17:32.948Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"导入","level":"1.8.2","depth":2,"next":{"title":"导出","level":"1.8.3","depth":2,"ref":"","articles":[]},"previous":{"title":"上传&下载","level":"1.8.1","depth":2,"path":"java/patzn/upload.md","ref":"java/patzn/upload.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/patzn/input.md","mtime":"2020-07-10T07:14:05.132Z","type":"markdown"},"gitbook":{"version":"3.2.1","time":"2020-07-11T00:14:32.023Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
