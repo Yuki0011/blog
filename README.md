@@ -1,3 +1,3 @@
 #  光盐のノート
 
-![avatar](picture/ali.jpg)# blog
+![avatar](picture/ali.jpg)

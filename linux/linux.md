@@ -53,3 +53,14 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
 ```
 
+查看nginx配置文件的位置
+
+```
+locate nginx.conf
+```
+
+查看端口是否被占用
+
+```
+lsof -i:
+```
