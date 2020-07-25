@@ -102,3 +102,21 @@ where  isnumeric(code) = false order by code asc  //分别排序
                 </otherwise>
             </choose>
 ```
+
+10.除法保留小数
+
+```
+select round(1::numeric/4::numeric,2);  //不转换类型的话，结果保留整数
+```
+
+11.格式化日期 到 小时
+
+```
+to_char(time, 'HH24:MI:SS')   //正确
+to_char(time, 'hh:mm:ss')    //错误
+
+HH24	一天的小时数(00-23)
+MI	   分钟(00-59)
+
+
+```

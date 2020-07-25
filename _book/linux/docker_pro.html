@@ -594,6 +594,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.11.4" data-path="jenkins.html">
+            
+                <a href="jenkins.html">
+            
+                    
+                    10.4 jenkins
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -663,6 +676,19 @@
             
                     
                     14 感悟篇
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    15 博客搭建
             
                 </span>
             
@@ -879,7 +905,36 @@ a {
 &lt;/html&gt;
 </code></pre><p>&#x6548;&#x679C;&#x5982;&#x56FE; <a href="http://49.235.157.108:3304/test/" target="_blank">http://49.235.157.108:3304/test/</a>
 <img src="../picture/mydocker.jpg" alt="avatar"></p>
+<h2 id="4&#x53D1;&#x5E03;&#x955C;&#x50CF;">4.&#x53D1;&#x5E03;&#x955C;&#x50CF;</h2>
+<p><strong>&#x53D1;&#x5E03;&#x955C;&#x50CF;&#x5230; dockerhub</strong></p>
+<pre><code>docker login -u guangyan0011     //&#x767B;&#x9646;
 
+docker tag 81409d1c24c6  guangyan0011/centos-xt:1.0.0   //&#x5C06;&#x955C;&#x50CF;&#x653E;&#x5230;guangyan0011&#x8D26;&#x6237;&#x4E0B;
+
+docker push guangyan0011/centos-xt:1.0.0   //&#x63A8;&#x9001;
+</code></pre><p><strong>&#x53D1;&#x5E03;&#x955C;&#x50CF;&#x5230;&#x963F;&#x91CC;&#x4E91;</strong></p>
+<pre><code>&#x5728;&#x7F51;&#x7AD9;&#x4E0A;&#x521B;&#x5EFA; &#x547D;&#x540D;&#x7A7A;&#x95F4; &#x548C; &#x955C;&#x50CF;&#x4ED3;&#x5E93; 
+&#x70B9;&#x51FB;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#xFF0C;&#x6709;&#x963F;&#x91CC;&#x4E91;&#x63D0;&#x793A;
+$ sudo docker login --username=18854218403 registry.cn-hangzhou.aliyuncs.com
+$ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/guangyan01/docker01:[&#x955C;&#x50CF;&#x7248;&#x672C;&#x53F7;]
+$ sudo docker push registry.cn-hangzhou.aliyuncs.com/guangyan01/docker01:[&#x955C;&#x50CF;&#x7248;&#x672C;&#x53F7;]
+</code></pre><h2 id="5docker-&#x7F51;&#x7EDC;">5.docker &#x7F51;&#x7EDC;</h2>
+<p>&#x901A;&#x8FC7; veth-pair &#x5B9E;&#x73B0;&#x7684;  &#x751F;&#x6210;&#x865A;&#x62DF;&#x7F51;&#x5361; &#x901A;&#x8FC7; docker etho0 &#x8F6C;&#x53D1;</p>
+<p><strong>--link</strong></p>
+<pre><code>docker run -d tomcat02 tomcat --link tomcat03
+
+docker exec -it  tomcato2  ping tomcat03 // &#x53EF;&#x4EE5;ping&#x901A;
+</code></pre><p><strong>&#x81EA;&#x5B9A;&#x4E49;&#x7F51;&#x7EDC;</strong></p>
+<pre><code>docker network ls  // &#x67E5;&#x770B;&#x6240;&#x6709;&#x7684;docker&#x7F51;&#x7EDC;
+
+docker network create --driver bridge --subnet 192.160.0.0/16 --gateway 192.168.0.1 mynet
+
+docker run -d -p --name tomcat01 --net mynet  tomcat
+
+docker run -d -p --name tomcat02 --net mynet  tomcat
+
+// &#x8FD9;&#x6837;tomcat01&#x548C;tomcat02&#x662F;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;ping&#x901A;&#x7684;
+</code></pre>
                                 
                                 </section>
                             
@@ -922,7 +977,7 @@ a {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10.2.2 进阶","level":"1.11.2.2","depth":3,"next":{"title":"10.3 nginx","level":"1.11.3","depth":2,"path":"linux/nginx.md","ref":"linux/nginx.md","articles":[]},"previous":{"title":"10.2.1 基础","level":"1.11.2.1","depth":3,"path":"linux/docker_basic.md","ref":"linux/docker_basic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/docker_pro.md","mtime":"2020-07-08T13:00:29.081Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-10T03:50:35.597Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10.2.2 进阶","level":"1.11.2.2","depth":3,"next":{"title":"10.3 nginx","level":"1.11.3","depth":2,"path":"linux/nginx.md","ref":"linux/nginx.md","articles":[]},"previous":{"title":"10.2.1 基础","level":"1.11.2.1","depth":3,"path":"linux/docker_basic.md","ref":"linux/docker_basic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/docker_pro.md","mtime":"2020-07-19T08:36:34.215Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-19T04:55:23.295Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

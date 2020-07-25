@@ -592,6 +592,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.11.4" data-path="jenkins.html">
+            
+                <a href="jenkins.html">
+            
+                    
+                    10.4 jenkins
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -661,6 +674,19 @@
             
                     
                     14 感悟篇
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    15 博客搭建
             
                 </span>
             
@@ -822,6 +848,7 @@ docker cp &#x5BB9;&#x5668;id:&#x6587;&#x4EF6;&#x8DEF;&#x5F84;  &#x4E3B;&#x673A;&
     1.firewall-cmd --get-active-zones
         &#x5982;&#x679C;&#x63D0;&#x793A;&#x9632;&#x706B;&#x5899;&#x672A;&#x5F00;&#x542F;&#x7684;&#x8BDD;&#xFF0C;&#x5148;&#x5F00;&#x542F;&#x9632;&#x706B;&#x5899;
         systemctl start firewalld
+        systemctl stop firewalld //&#x5173;&#x95ED;&#x9632;&#x706B;&#x5899;
     2.firewall-cmd --zone=public --add-port=3344/tcp --permanent
     3.firewall-cmd --reload &#x91CD;&#x542F;&#x9632;&#x706B;&#x5899;
     4.firewall-cmd --query-port=3344/tcp &#x67E5;&#x770B;&#x662F;&#x5426;&#x5F00;&#x542F;&#x6210;&#x529F;  yes &#x4EE3;&#x8868;&#x6210;&#x529F;
@@ -893,7 +920,7 @@ docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /va
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10.2.1 基础","level":"1.11.2.1","depth":3,"next":{"title":"10.2.2 进阶","level":"1.11.2.2","depth":3,"path":"linux/docker_pro.md","ref":"linux/docker_pro.md","articles":[]},"previous":{"title":"10.2 docker","level":"1.11.2","depth":2,"ref":"","articles":[{"title":"10.2.1 基础","level":"1.11.2.1","depth":3,"path":"linux/docker_basic.md","ref":"linux/docker_basic.md","articles":[]},{"title":"10.2.2 进阶","level":"1.11.2.2","depth":3,"path":"linux/docker_pro.md","ref":"linux/docker_pro.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/docker_basic.md","mtime":"2020-07-07T01:57:42.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-10T03:50:35.597Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10.2.1 基础","level":"1.11.2.1","depth":3,"next":{"title":"10.2.2 进阶","level":"1.11.2.2","depth":3,"path":"linux/docker_pro.md","ref":"linux/docker_pro.md","articles":[]},"previous":{"title":"10.2 docker","level":"1.11.2","depth":2,"ref":"","articles":[{"title":"10.2.1 基础","level":"1.11.2.1","depth":3,"path":"linux/docker_basic.md","ref":"linux/docker_basic.md","articles":[]},{"title":"10.2.2 进阶","level":"1.11.2.2","depth":3,"path":"linux/docker_pro.md","ref":"linux/docker_pro.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/docker_basic.md","mtime":"2020-07-13T14:40:47.311Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-19T04:55:23.295Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
