@@ -222,3 +222,53 @@ a {
 
 
 
+## 4.发布镜像
+**发布镜像到 dockerhub**
+
+```
+docker login -u guangyan0011     //登陆
+
+docker tag 81409d1c24c6  guangyan0011/centos-xt:1.0.0   //将镜像放到guangyan0011账户下
+
+docker push guangyan0011/centos-xt:1.0.0   //推送
+
+```
+**发布镜像到阿里云**
+
+```
+在网站上创建 命名空间 和 镜像仓库 
+点击镜像仓库，有阿里云提示
+$ sudo docker login --username=18854218403 registry.cn-hangzhou.aliyuncs.com
+$ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/guangyan01/docker01:[镜像版本号]
+$ sudo docker push registry.cn-hangzhou.aliyuncs.com/guangyan01/docker01:[镜像版本号]
+
+```
+##5.docker 网络
+通过 veth-pair 实现的  生成虚拟网卡 通过 docker etho0 转发
+
+**--link**
+
+```
+docker run -d tomcat02 tomcat --link tomcat03
+
+docker exec -it  tomcato2  ping tomcat03 // 可以ping通
+```
+
+**自定义网络**
+
+```
+docker network ls  // 查看所有的docker网络
+
+docker network create --driver bridge --subnet 192.160.0.0/16 --gateway 192.168.0.1 mynet
+
+docker run -d -p --name tomcat01 --net mynet  tomcat
+
+docker run -d -p --name tomcat02 --net mynet  tomcat
+
+// 这样tomcat01和tomcat02是可以相互ping通的
+
+
+
+```
+
+

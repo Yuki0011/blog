@@ -64,3 +64,9 @@ locate nginx.conf
 ```
 lsof -i:
 ```
+
+查看是否启动
+
+```
+
+```

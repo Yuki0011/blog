@@ -118,6 +118,7 @@ docker cp 容器id:文件路径  主机路径
 	1.firewall-cmd --get-active-zones
 		如果提示防火墙未开启的话，先开启防火墙
 		systemctl start firewalld
+		systemctl stop firewalld //关闭防火墙
 	2.firewall-cmd --zone=public --add-port=3344/tcp --permanent
 	3.firewall-cmd --reload 重启防火墙
 	4.firewall-cmd --query-port=3344/tcp 查看是否开启成功  yes 代表成功
