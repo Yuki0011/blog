@@ -7,7 +7,7 @@
         <title>7.5 其他 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.1">
         
         
         
@@ -125,12 +125,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="collection.html">
+        <li class="chapter " data-level="1.2.2" data-path="dataType.html">
+            
+                <a href="dataType.html">
+            
+                    
+                    1.2 其他数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="collection.html">
             
                 <a href="collection.html">
             
                     
-                    1.2 集合数组
+                    1.3 集合数组
             
                 </a>
             
@@ -138,12 +151,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="git.md">
+        <li class="chapter " data-level="1.2.4" data-path="git.md">
             
                 <span>
             
                     
-                    1.3 git
+                    1.4 git
             
                 </a>
             
@@ -151,12 +164,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="poi.html">
+        <li class="chapter " data-level="1.2.5" data-path="poi.html">
             
                 <a href="poi.html">
             
                     
-                    1.4 poi
+                    1.5 poi
             
                 </a>
             
@@ -738,20 +751,17 @@
                                 <section class="normal markdown-section">
                                 
                                 <pre><code class="lang-java">&#x83B7;&#x53D6;resource&#x4E0B;&#x7684;&#x6587;&#x4EF6;
-InputStream inputStream = getClass().getClassLoader().getResourceAsStream(&quot;templates/2019register.docx&#x201D;);
-</code></pre>
+InputStream inputStream = getClass().getClassLoader().getResourceAsStream(<span class="hljs-string">&quot;templates/2019register.docx&#x201D;);</span></code></pre>
 <p>&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x4E0D;&#x4E0A;&#x6392;&#x67E5;
 <a href="http://localhost:8002/actuator/health" target="_blank">http://localhost:8002/actuator/health</a>
 &#x68C0;&#x67E5;&#x670D;&#x52A1;&#x5065;&#x5EB7;&#x72B6;&#x6001;
-<img src="../../Users/xutao/guangyan/picture/9007578A-BABE-4E67-8C74-213D0B36083E.png" alt="avatar">
+<img alt="avatar" src="../../Users/xutao/guangyan/picture/9007578A-BABE-4E67-8C74-213D0B36083E.png">
 &#x5C06;&#x5904;&#x4E8E;down&#x72B6;&#x6001;&#x7684;&#x670D;&#x52A1;&#x7684;&#x5065;&#x5EB7;&#x68C0;&#x67E5;&#x5173;&#x95ED;&#x6389;&#xFF0C;&#x5982;redis&#x4E0D;&#x5065;&#x5EB7;
 management:
   health:
     redis:
-      enabled: false</p>
-<pre><code>.replaceAll(&quot;&lt;[.[^&lt;]]*&gt;&quot;, &quot;&quot;)    &#x53BB;&#x6389;&#x5BCC;&#x6587;&#x672C;&#x7684;P&#x6807;&#x7B7E;
-</code></pre><p>&#x65F6;&#x95F4;&#x64CD;&#x4F5C;</p>
-<pre><code>&#x63A8;&#x8FDF;&#x4E00;&#x5468;&#x793A;&#x4F8B;&#xFF1A; 
+      enabled: false</p><pre><code>.replaceAll(&quot;&lt;[.[^&lt;]]*&gt;&quot;, &quot;&quot;)    &#x53BB;&#x6389;&#x5BCC;&#x6587;&#x672C;&#x7684;P&#x6807;&#x7B7E;</code></pre>
+<p>&#x65F6;&#x95F4;&#x64CD;&#x4F5C;</p><pre><code>&#x63A8;&#x8FDF;&#x4E00;&#x5468;&#x793A;&#x4F8B;&#xFF1A; 
 Calendar curr = Calendar.getInstance(); //&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x65F6;&#x95F4;
 curr.set(Calendar.DAY_OF_MONTH,curr.get(Calendar.DAY_OF_MONTH)+7); //&#x7ED9;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x589E;&#x52A0;&#x4E00;&#x5468;
 Date date=curr.getTime();//&#x83B7;&#x53D6;&#x65B0;&#x7684;&#x65F6;&#x95F4;
@@ -762,8 +772,8 @@ Date date=curr.getTime();
 &#x63A8;&#x8FDF;&#x4E00;&#x5E74;&#x793A;&#x4F8B;&#xFF1A; 
 Calendar curr = Calendar.getInstance(); 
 curr.set(Calendar.YEAR,curr.get(Calendar.YEAR)+1); //&#x589E;&#x52A0;&#x4E00;&#x5E74;
-Date date=curr.getTime();
-</code></pre>
+Date date=curr.getTime();</code></pre>
+
                                 
                                 </section>
                             
@@ -798,7 +808,7 @@ Date date=curr.getTime();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7.5 其他","level":"1.8.5","depth":2,"next":{"title":"8 前端","level":"1.9","depth":1,"ref":"","articles":[{"title":"8.1 碎片","level":"1.9.1","depth":2,"path":"js/debris.md","ref":"js/debris.md","articles":[]},{"title":"8.2 vue","level":"1.9.2","depth":2,"path":"java/example2.md","ref":"java/example2.md","articles":[]},{"title":"8.3 react","level":"1.9.3","depth":2,"path":"java/example2.md","ref":"java/example2.md","articles":[]},{"title":"8.4 node.js","level":"1.9.4","depth":2,"path":"java/example2.md","ref":"java/example2.md","articles":[]}]},"previous":{"title":"7.4 工具","level":"1.8.4","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/patzn/debris.md","mtime":"2020-05-29T07:44:19.896Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-19T04:55:23.295Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.5 其他","level":"1.8.5","depth":2,"next":{"title":"8 前端","level":"1.9","depth":1,"ref":"","articles":[{"title":"8.1 碎片","level":"1.9.1","depth":2,"path":"js/debris.md","ref":"js/debris.md","articles":[]},{"title":"8.2 vue","level":"1.9.2","depth":2,"path":"java/example2.md","ref":"java/example2.md","articles":[]},{"title":"8.3 react","level":"1.9.3","depth":2,"path":"java/example2.md","ref":"java/example2.md","articles":[]},{"title":"8.4 node.js","level":"1.9.4","depth":2,"path":"java/example2.md","ref":"java/example2.md","articles":[]}]},"previous":{"title":"7.4 工具","level":"1.8.4","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/patzn/debris.md","mtime":"2020-07-10T07:14:05.132Z","type":"markdown"},"gitbook":{"version":"3.2.1","time":"2020-07-11T00:14:32.023Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
