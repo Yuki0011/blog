@@ -32,3 +32,11 @@ String time = sdf.format(new Date());
 
 ```
 
+**集合，字符串互相转换**
+
+```
+String s = StringUtils.join(longs.stream().map(Object::toString).toArray(String[]::new), ",")
+
+List<Long> listIds = Arrays.asList(ids.split(",")).stream().map(s -> Long.parseLong(s.trim())).collect(Collectors.toList());
+
+```
