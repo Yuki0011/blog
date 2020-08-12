@@ -32,3 +32,19 @@ Double 的 toString，而 Double 的 toString 按 double 的实际能表达的�
  BigDecimal recommend1 = new BigDecimal("0.1");
  BigDecimal recommend2 = BigDecimal.valueOf(0.1);
 ```
+
+
+lamda 计算几何某个字段的总和
+
+```
+Integer[] integerArray = {1, 3, 5, 10, 18};
+
+List<Integer> list = new ArrayList<>(Arrays.asList(integerArray));
+
+IntSummaryStatistics summaryStatistics = list.stream().mapToInt((s) -> s).summaryStatistics();
+System.out.println("总和：" + summaryStatistics.getSum());
+System.out.println("平均数：" + summaryStatistics.getAverage());
+System.out.println("总个数：" + summaryStatistics.getCount());
+System.out.println("最大值：" + summaryStatistics.getMax());
+System.out.println("最小值：" + summaryStatistics.getMin());
+```
