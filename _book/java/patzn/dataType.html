@@ -776,6 +776,17 @@ if (x.equals(y)) {
 Double &#x7684; toString&#xFF0C;&#x800C; Double &#x7684; toString &#x6309; double &#x7684;&#x5B9E;&#x9645;&#x80FD;&#x8868;&#x8FBE;&#x7684;&#x7CBE;&#x5EA6;&#x5BF9;&#x5C3E;&#x6570;&#x8FDB;&#x884C;&#x4E86;&#x622A;&#x65AD;&#x3002;</strong></p>
 <pre><code> BigDecimal recommend1 = new BigDecimal(&quot;0.1&quot;);
  BigDecimal recommend2 = BigDecimal.valueOf(0.1);
+</code></pre><p>lamda &#x8BA1;&#x7B97;&#x51E0;&#x4F55;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x603B;&#x548C;</p>
+<pre><code>Integer[] integerArray = {1, 3, 5, 10, 18};
+
+List&lt;Integer&gt; list = new ArrayList&lt;&gt;(Arrays.asList(integerArray));
+
+IntSummaryStatistics summaryStatistics = list.stream().mapToInt((s) -&gt; s).summaryStatistics();
+System.out.println(&quot;&#x603B;&#x548C;&#xFF1A;&quot; + summaryStatistics.getSum());
+System.out.println(&quot;&#x5E73;&#x5747;&#x6570;&#xFF1A;&quot; + summaryStatistics.getAverage());
+System.out.println(&quot;&#x603B;&#x4E2A;&#x6570;&#xFF1A;&quot; + summaryStatistics.getCount());
+System.out.println(&quot;&#x6700;&#x5927;&#x503C;&#xFF1A;&quot; + summaryStatistics.getMax());
+System.out.println(&quot;&#x6700;&#x5C0F;&#x503C;&#xFF1A;&quot; + summaryStatistics.getMin());
 </code></pre>
                                 
                                 </section>
@@ -819,7 +830,7 @@ Double &#x7684; toString&#xFF0C;&#x800C; Double &#x7684; toString &#x6309; doubl
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2 其他数据类型","level":"1.2.2","depth":2,"next":{"title":"1.3 集合数组","level":"1.2.3","depth":2,"path":"java/patzn/collection.md","ref":"java/patzn/collection.md","articles":[]},"previous":{"title":"1.1 String","level":"1.2.1","depth":2,"path":"java/patzn/string.md","ref":"java/patzn/string.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/patzn/dataType.md","mtime":"2020-07-21T09:05:08.839Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-29T12:26:02.552Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.2 其他数据类型","level":"1.2.2","depth":2,"next":{"title":"1.3 集合数组","level":"1.2.3","depth":2,"path":"java/patzn/collection.md","ref":"java/patzn/collection.md","articles":[]},"previous":{"title":"1.1 String","level":"1.2.1","depth":2,"path":"java/patzn/string.md","ref":"java/patzn/string.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/patzn/dataType.md","mtime":"2020-08-10T15:00:50.940Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-27T02:23:43.627Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

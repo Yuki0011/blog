@@ -1,3 +1,3 @@
 #  光盐のノート  
 
-![avatar](picture/ali.jpg)
+![avatar](picture/bj.png)
