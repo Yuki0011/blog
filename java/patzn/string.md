@@ -39,4 +39,7 @@ String s = StringUtils.join(longs.stream().map(Object::toString).toArray(String[
 
 List<Long> listIds = Arrays.asList(ids.split(",")).stream().map(s -> Long.parseLong(s.trim())).collect(Collectors.toList());
 
+
+sampleList.stream().map(e -> e.getSelfNum()).collect(Collectors.joining(","));   // 集合中的名称按逗号拼接
+
 ```
