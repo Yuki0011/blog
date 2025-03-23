@@ -1,7 +1,7 @@
 # 光盐のノート
 * [理想未死](README.md)
 * [1. java]()
-    * [1.1 基础](java/)
+    * [1.1 基础](java/basic/basic.md)
     * [1.2 虚拟机](java/jvm.md)
     * [1.3 工具类](java/jvm.md)
     * [1.1 String](java/patzn/string.md)
