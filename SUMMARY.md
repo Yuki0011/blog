@@ -28,6 +28,8 @@
     * [1.3 集合&数组](java/patzn/collection.md)
     * [1.4 git](java/patzn/git.md)
     * [1.5 poi](java/patzn/poi.md)
+* [编码]()
+    * [1 抽象](java/example2.md)
 * [2. 微服务]()
     * [2.1 springboot](java/example2.md)
     * [2.2 mybatisPlus](java/patzn/mybatis.md)
