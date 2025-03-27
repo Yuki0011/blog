@@ -19,7 +19,7 @@
             * [1.2.1 cdn](architecture\microservice\network\cdn.md)
             * [1.2.2 https]()
             * [1.2.3 nginx]()
-            * [1.2.4 dns]()
+            * [1.2.4 dns](architecture\microservice\network\dns.md)
         * [1.3 业务层]()
     * [1.2 虚拟机](java/jvm.md)
     * [1.3 工具类](java/jvm.md)
