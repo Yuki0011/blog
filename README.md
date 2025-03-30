@@ -1,3 +1,0 @@
-#  
-
-<img src="picture/px.png" >

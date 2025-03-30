@@ -1,5 +1,5 @@
 # 凉风的笔记
-* [凉风的笔记](README.md)
+* [凉风的笔记](introduce.md)
 * [java]()
     * [1 基础](java/basic/basic.md)
     * [2 虚拟机](java/jvm.md)
