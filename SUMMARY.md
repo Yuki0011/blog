@@ -51,6 +51,7 @@
 		        * [进阶](linux/docker_pro.md)
 	            * [3.1.27.3 nginx](linux/nginx.md)
 	            * [3.1.27.4 jenkins](linux/jenkins.md)
+            * [3.1.28 序列化与反序列化]()
         * [3.2 单体]()
         * [3.3 分布式]()
         * [3.4 业务]()
