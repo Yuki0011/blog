@@ -76,5 +76,5 @@
 * [python](section2/README.md)
     * [1.爬虫](section2/example1.md)
 * [go]()
-* [操作系统](mac/experience.md)
+* [机器学习](mac/experience.md)
 * [感悟篇]()
