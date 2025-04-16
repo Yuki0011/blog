@@ -49,7 +49,7 @@
             * [3.1.25 中间件]()
             * [3.1.26 私服]()
             * [3.1.27 虚拟化、容器化]()
-	            * [3.1.27.1 linux](linux/linux.md)
+	            * [3.1.27.1 centos](linux/linux.md)
 	            * [3.1.27.2 docker]()
 		        * [基础](linux/docker_basic.md)
 		        * [进阶](linux/docker_pro.md)

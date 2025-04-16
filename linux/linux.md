@@ -70,3 +70,14 @@ lsof -i:
 ```
 
 ```
+
+设置硬盘挂载
+```
+sudo fdisk -l 查看硬盘信息
+sudo mkfs.ext4 /dev/sda  如果硬盘是 /dev/sda的话， 创建 ext4 文件系统
+sudo mkdir /mnt/mydisk 创建挂载点  （我在创建mnt下面的mydisk时总是提示失败，所以
+我直接建在和mnt同一级目录，也就是根目录下了）
+sudo mount /dev/sda /mnt/mydisk 将硬盘分区挂载到指定的挂载点
+df -h 验证挂载
+
+```
